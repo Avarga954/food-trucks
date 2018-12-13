@@ -1,0 +1,32 @@
+{
+    "extends": ["react-app", "prettier", "prettier/react"],
+    "plugins": ["prettier"],
+    "rules": {
+      "arrow-body-style": ["warn", "as-needed"],
+      "eqeqeq": ["error", "always", { "null": "ignore" }],
+      "import/newline-after-import": "warn",
+      "lines-between-class-members": "warn",
+      "no-else-return": "warn",
+      "no-useless-return": "warn",
+      "no-var": "error",
+      "object-shorthand": "warn",
+      "prefer-arrow-callback": "warn",
+      "prefer-const": "warn",
+      "prefer-template": "warn",
+      "prettier/prettier": "warn",
+      "quotes": ["warn", "single", { "avoidEscape": true }],
+      "react/default-props-match-prop-types": "warn",
+      "react/jsx-curly-brace-presence": "warn",
+      "react/jsx-no-bind": ["warn", {
+        "ignoreRefs": true,
+        "allowArrowFunctions": true,
+        "allowBind": false
+      }],
+      "react/jsx-key": "warn",
+      "react/no-unused-prop-types": "warn",
+      "react/prop-types": "warn",
+      "react/sort-comp": "warn",
+      "yoda": "warn"
+    }
+  }
+  
