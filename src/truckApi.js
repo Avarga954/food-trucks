@@ -22,10 +22,8 @@ const fetchTruckData = () => {
     })
     .catch(async error => {
       if (error.response) {
-        if (error.response.status >= 500) {
-          // Exit App after several failed api call attempts
-          exitApp(`Api Exception Thrown Status Code: ${error.response.status}`);
-        }
+        // Exit App after several failed api call attempts
+        exitApp(`Api Exception Thrown Status Code: ${error.response.status}`);
       } else {
         //Fire some sort of loggin or notification
         exitApp('Unknown Exception Thrown');
